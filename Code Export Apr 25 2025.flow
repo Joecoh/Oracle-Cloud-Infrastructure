@@ -1,0 +1,44 @@
+direction right
+title Customer Churn Prediction Flow Chart
+
+// Nodes and groups
+Start Data Collection [shape: oval, color: lightblue, icon: database]
+Preprocessing [icon: filter, color: blue]
+Handle Missing Values [icon: alert-circle, color: orange]
+Encode Categorical Features [icon: hash, color: purple]
+Scale Numerical Features [icon: trending-up, color: teal]
+EDA [label: Exploratory Data Analysis, icon: bar-chart-2, color: yellow]
+Feature Engineering [icon: settings, color: green]
+Model Building [icon: cpu, color: lightgreen]
+Random Forest Training [icon: git-branch, color: green]
+XGBoost Training [icon: zap, color: orange]
+Model Evaluation [icon: activity, color: pink]
+Compare Models [icon: columns, color: gray]
+Select Best Model [icon: star, color: gold]
+Save Model Artifacts [icon: save, color: blue]
+Streamlit Deployment [icon: monitor, color: purple]
+User Inputs Customer Data [icon: user, color: lightblue]
+Make Prediction [icon: check-circle, color: green]
+Show Prediction Result [icon: message-circle, color: yellow]
+End [shape: oval, color: lightblue, icon: flag]
+
+// Relationships
+Start Data Collection > Preprocessing
+Preprocessing > Handle Missing Values
+Handle Missing Values > Encode Categorical Features
+Encode Categorical Features > Scale Numerical Features
+Scale Numerical Features > EDA
+EDA > Feature Engineering
+Feature Engineering > Model Building
+Model Building > Random Forest Training
+Model Building > XGBoost Training
+Random Forest Training > Model Evaluation
+XGBoost Training > Model Evaluation
+Model Evaluation > Compare Models
+Compare Models > Select Best Model
+Select Best Model > Save Model Artifacts
+Save Model Artifacts > Streamlit Deployment
+Streamlit Deployment > User Inputs Customer Data
+User Inputs Customer Data > Make Prediction
+Make Prediction > Show Prediction Result
+Show Prediction Result > End
