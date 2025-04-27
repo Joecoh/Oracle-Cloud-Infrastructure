@@ -3,3 +3,5 @@ scikit-learn
 xgboost
 streamlit
 joblib
+streamlit
+streamlit-lottie
