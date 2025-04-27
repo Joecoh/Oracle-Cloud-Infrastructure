@@ -15,7 +15,6 @@ You can try the deployed Streamlit app here: [Customer Churn Prediction App](htt
 - [Usage](#usage)
 - [Features](#features)
 - [Model Evaluation Results](#model-evaluation-results)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
@@ -151,28 +150,6 @@ The table below compares the performance of the Random Forest and XGBoost models
 
 Based on the evaluation, **XGBoost** is selected as the final model due to its higher F1-score and recall, which are crucial for minimizing churn cases missed. The trained XGBoost model has been saved as `xgb_classifier_model.pkl` and is deployed for predictions in the Streamlit application.
 
----
-
-## Contributing
-
-Contributions to the project are welcome! To contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix:
-    ```bash
-    git checkout -b feature/your-feature-name
-    ```
-3. Make your changes and commit them:
-    ```bash
-    git commit -m "Add your message here"
-    ```
-4. Push your changes to your forked repository:
-    ```bash
-    git push origin feature/your-feature-name
-    ```
-5. Create a pull request in the main repository.
-
-For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
