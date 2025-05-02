@@ -68,14 +68,17 @@ def main():
 
     # Header with animation and title
     st_lottie(header_anim, speed=1, loop=True, height=250)
-    cols = st.columns([1, 9])
+    cols = st.columns([1, 6])
     with cols[0]:
-        st_lottie(brin_anim, height=80, width=60) 
+        st_lottie(brin_anim, height=80, width=80)
+    
+    with cols[1]:
         st.markdown("""
-            <h1 style='color: #4CAF50; padding-top: 10px;'>Customer Churn Predictor</h1>
-            <h4 style='color: grey;'>Predict customer churn with smart insights!</h4>
-            <hr />
-        """, unsafe_allow_html=True)
+            <div style='display: flex; align-items: center;'>
+                <h1 style='color: #4CAF50; margin: 0;'>Customer Churn Predictor</h1>
+            </div>
+       """, unsafe_allow_html=True)
+
 
 
     # Form for user inputs
