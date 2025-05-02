@@ -1,3 +1,21 @@
+# ------------------------------------------------------------------------------
+# File: training_model.py
+# Author: Joash Elan Cohen
+# Email: joashelangovan@gmail.com
+# Created: 2025-05-01
+# Description: Script to preprocess data, train an XGBoost model, encode features,
+#              and save the model and encoders to disk.
+# License: MIT License
+# ------------------------------------------------------------------------------
+
+"""
+This script handles:
+- Loading and preprocessing customer churn data
+- Encoding categorical variables
+- Training an XGBoost classifier
+- Saving the trained model and encoders using joblib
+"""
+
 import os
 import pandas as pd
 import pickle
